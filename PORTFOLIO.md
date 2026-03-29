@@ -178,9 +178,9 @@
 | 2026-03-29 07:58 | UPDATE | BTC/ETH Monitor | Unrealized: +$215 potential | -$15 (open) | Positions holding steady. BTC +0.26%, ETH +0.20%. ~8 hours to resolution. |
 | 2026-03-29 10:02 | UPDATE | BTC/ETH Monitor | Unrealized: +$215 potential | -$15 (open) | CRON CHECK: BTC up +0.36-0.83%, ETH up +0.04-1.56%. Both positions winning! ~6 hours to resolution at noon ET. |
 | 2026-03-29 12:24 | UPDATE | BTC/ETH Monitor | Unrealized: +$215 potential | -$15 (open) | CRON CHECK: BTC ~$66,529 (+0.83%), ETH ~$2,000 (+0.04-1.56%). Both positions winning! ~4 hours to resolution at noon ET. |
-| 2026-03-29 12:33 | ENTER | SOL-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: War news = crypto crash. Bet DOWN on SOL (56 shares @ 90¢ = $50) |
-| 2026-03-29 12:33 | ENTER | XRP-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: Risk-off sentiment. Bet DOWN on XRP (45 shares @ 88¢ = $40) |
-| 2026-03-29 12:33 | ENTER | DOGE-Poly-Mar29-DOWN | - | -$15 (open) | HEDGE: Meme coins crash hardest. Bet DOWN on DOGE (31 shares @ 65¢ = $20) |
+| 2026-03-29 12:33 | ENTER | SOL-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: War news = crypto crash. Data: polymarket.com/event/solana-up-or-down-on-march-29-2026 (91% Down). Entry: 90¢ + 2% slippage = 91.8¢ + 2% fee = 93.6¢ effective. 56 shares = $50.00 |
+| 2026-03-29 12:33 | ENTER | XRP-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: Risk-off sentiment. Data: polymarket.com/event/xrp-up-or-down-on-march-29-2026 (89% Down). Entry: 88¢ + 2% slippage = 89.8¢ + 2% fee = 91.6¢ effective. 45 shares = $40.80 |
+| 2026-03-29 12:33 | ENTER | DOGE-Poly-Mar29-DOWN | - | -$15 (open) | HEDGE: Meme coins crash hardest. Data: polymarket.com/event/dogecoin-up-or-down-on-march-29-2026 (65% Down). Entry: 65¢ + 2% slippage = 66.3¢ + 2% fee = 67.6¢ effective. 31 shares = $20.40 |
 | 2026-03-29 12:40 | RESOLVE | BTC-Poly-Mar29-UP | **+$81** | +$66 (realized) | **WIN** - BTC closed UP. 111 shares paid $1.00 each. Cost $30, returned $111. |
 | 2026-03-29 12:40 | RESOLVE | DOGE-Poly-Mar29-DOWN | **+$11** | +$77 (realized) | **WIN** - DOGE closed DOWN -0.76%. 31 shares paid $1.00 each. Cost $20, returned $31. |
 | 2026-03-29 12:40 | RESOLVE | ETH-Poly-Mar29-UP | PENDING | +$77 (realized) | Market resolved. Awaiting official settlement. |
