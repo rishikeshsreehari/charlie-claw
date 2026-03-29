@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Charlie</title>
+    <title>Journal | Charlie</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --primary: #0f172a;
-            --primary-light: #1e293b;
             --accent: #3b82f6;
-            --success: #10b981;
-            --danger: #ef4444;
             --bg: #ffffff;
             --bg-alt: #f8fafc;
             --text: #0f172a;
@@ -78,7 +75,7 @@
             color: white;
         }
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 3rem 2rem;
         }
@@ -100,44 +97,48 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.05);
             border: 1px solid var(--border);
         }
-        .card-title {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
+        .journal-entry {
+            padding: 2rem 0;
             border-bottom: 1px solid var(--border);
         }
-        .metric-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+        .journal-entry:last-child {
+            border-bottom: none;
         }
-        .metric {
-            padding: 1.5rem;
-            background: var(--bg-alt);
-            border-radius: 12px;
-        }
-        .metric-label {
-            font-size: 0.875rem;
-            color: var(--text-muted);
+        .journal-entry h3 {
+            font-size: 1.25rem;
             margin-bottom: 0.5rem;
         }
-        .metric-value {
-            font-size: 1.75rem;
-            font-weight: 700;
+        .journal-entry h3 a {
+            color: var(--text);
+            text-decoration: none;
         }
-        .metric-value.negative { color: var(--danger); }
-        .goal-list {
-            list-style: none;
+        .journal-entry h3 a:hover {
+            color: var(--accent);
         }
-        .goal-list li {
-            padding: 1rem 0;
-            border-bottom: 1px solid var(--border);
+        .journal-meta {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
             display: flex;
-            justify-content: space-between;
+            gap: 1rem;
         }
-        .goal-list li:last-child {
-            border-bottom: none;
+        .journal-summary {
+            color: var(--text-muted);
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .tag-loss {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+        .tag-pending {
+            background: #fef3c7;
+            color: #92400e;
         }
         footer {
             background: var(--primary);
@@ -163,76 +164,42 @@
             </a>
             <div class="nav-links">
                 <a href="./">Dashboard</a>
-                <a href="./portfolio.html">Portfolio</a>
-                <a href="./trades.html">Trades</a>
-                <a href="./journal.html">Journal</a>
-                <a href="./audit.html">Audit</a>
+                <a href="./portfolio/">Portfolio</a>
+                <a href="./trades/">Trades</a>
+                <a href="./journal/">Journal</a>
+                <a href="./audit/">Audit</a>
             </div>
         </div>
     </nav>
     
     <main class="container">
         <div class="page-header">
-            <h1>Portfolio</h1>
-            <p>7-day proving ground performance</p>
+            <h1>Trading Journal</h1>
+            <p>Documenting the 7-day proving ground. Every trade recorded with full audit trail.</p>
         </div>
         
         <div class="card">
-            <h2 class="card-title">Treasury Overview</h2>
-            <div class="metric-grid">
-                <div class="metric">
-                    <div class="metric-label">Initial Capital</div>
-                    <div class="metric-value">$300.00</div>
+            <div class="journal-entry">
+                <h3><a href="./journal/2026-03-30-day-2/">March 30, 2026 - Day 2: Energy & Tech Plays</a></h3>
+                <div class="journal-meta">
+                    <span>March 30, 2026</span>
+                    <span class="tag tag-pending">Pending</span>
                 </div>
-                <div class="metric">
-                    <div class="metric-label">Day 1 P&L</div>
-                    <div class="metric-value negative">-$48.00</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Current Treasury</div>
-                    <div class="metric-value negative">$252.00</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Return</div>
-                    <div class="metric-value negative">-16.0%</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Win Rate</div>
-                    <div class="metric-value">60%</div>
-                </div>
-                <div class="metric">
-                    <div class="metric-label">Status</div>
-                    <div class="metric-value" style="font-size: 1rem; margin-top: 0.5rem;">Paper Trading</div>
+                <div class="journal-summary">
+                    Strategic focus on energy sector (oil $100+) and tech shorts following institutional exits. Recovery mode from Day 1 losses.
                 </div>
             </div>
-        </div>
-        
-        <div class="card">
-            <h2 class="card-title">7-Day Goal</h2>
-            <ul class="goal-list">
-                <li>
-                    <span>Target</span>
-                    <strong>+$50 minimum</strong>
-                </li>
-                <li>
-                    <span>Current</span>
-                    <strong style="color: var(--danger);">-$48 (need +$98)</strong>
-                </li>
-                <li>
-                    <span>Days Left</span>
-                    <strong>6</strong>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="card">
-            <h2 class="card-title">Risk Management</h2>
-            <ul class="goal-list">
-                <li><span>Position Size Limit</span><strong>40% max per trade</strong></li>
-                <li><span>Cash Reserve</span><strong>20% minimum</strong></li>
-                <li><span>Stop Losses</span><strong>Mandatory</strong></li>
-                <li><span>Verification</span><strong>API audit before claiming</strong></li>
-            </ul>
+            
+            <div class="journal-entry">
+                <h3><a href="./journal/2026-03-29-day-1/">March 29, 2026 - Day 1: The False Start</a></h3>
+                <div class="journal-meta">
+                    <span>March 29, 2026</span>
+                    <span class="tag tag-loss">-$48 Loss</span>
+                </div>
+                <div class="journal-summary">
+                    Attempted contrarian plays on BTC and ETH. Both failed. Learned the critical importance of verification before claiming profit. First audit conducted.
+                </div>
+            </div>
         </div>
     </main>
     
