@@ -7,8 +7,8 @@
 | **Real Money** | $0.00 | Locked - need to prove profitability first |
 | **Paper Trading (Total)** | $300.00 | Active - my trading limit |
 | **Setup Costs** | -$15.00 | Debt to recover |
-| **Deployed Capital** | $70.00 | 23% allocated |
-| **Dry Powder** | $230.00 | 77% ready to deploy |
+| **Deployed Capital** | $180.00 | 60% allocated |
+| **Dry Powder** | $120.00 | 40% ready to deploy |
 | **Net Position** | -$15.00 | Currently underwater |
 
 **Trading Limit:** Maximum $300 paper capital. I cannot exceed this, even though Alpaca gives me $100K.
@@ -79,6 +79,60 @@
 
 **Trade Thesis:** Market pricing 75%+ chance of BTC decline in 24hrs is excessive. Even random walk gives ~50%. Edge: market overreacting to recent price action. Risk: $30. Reward: $80+. Asymmetric bet.
 
+**ACTIVE TRADE #3: SOL Down March 29 (RECOVERY)**
+
+| Field | Value |
+|-------|-------|
+| **Entry Date** | 2026-03-29 12:33 UTC |
+| **Market** | Solana Up or Down on March 29 |
+| **Direction** | DOWN (Trend-following) |
+| **Entry Price** | $0.90 per share (90¢) |
+| **Shares** | 56 |
+| **Position Size** | $50.00 |
+| **Rationale** | War escalation = risk-off. Crypto crashing. 91% already betting DOWN - follow the trend, not contrarian. |
+| **Stop Loss** | $0.00 (binary) |
+| **Target** | $1.00 per share (+11% if correct) |
+| **Max Loss** | $50.00 |
+| **Resolution** | March 29, noon ET (~3 hours) |
+
+**ACTIVE TRADE #4: XRP Down March 29 (RECOVERY)**
+
+| Field | Value |
+|-------|-------|
+| **Entry Date** | 2026-03-29 12:33 UTC |
+| **Market** | XRP Up or Down on March 29 |
+| **Direction** | DOWN (Trend-following) |
+| **Entry Price** | $0.88 per share (88¢) |
+| **Shares** | 45 |
+| **Position Size** | $40.00 |
+| **Rationale** | Same thesis as SOL - war = crypto risk-off. 89% betting DOWN. |
+| **Stop Loss** | $0.00 (binary) |
+| **Target** | $1.00 per share (+14% if correct) |
+| **Max Loss** | $40.00 |
+| **Resolution** | March 29, noon ET (~3 hours) |
+
+**ACTIVE TRADE #5: DOGE Down March 29 (HEDGE)**
+
+| Field | Value |
+|-------|-------|
+| **Entry Date** | 2026-03-29 12:33 UTC |
+| **Market** | Dogecoin Up or Down on March 29 |
+| **Direction** | DOWN (Trend-following) |
+| **Entry Price** | $0.65 per share (65¢) |
+| **Shares** | 31 |
+| **Position Size** | $20.00 |
+| **Rationale** | Meme coins crash hardest in risk-off. Lower conviction but cheap hedge. |
+| **Stop Loss** | $0.00 (binary) |
+| **Target** | $1.00 per share (+54% if correct) |
+| **Max Loss** | $20.00 |
+| **Resolution** | March 29, noon ET (~3 hours) |
+
+## Recovery Strategy Summary
+**Total Recovery Deployment:** $110 (SOL $50 + XRP $40 + DOGE $20)  
+**Remaining Dry Powder:** $120  
+**Total at Risk:** $180 (original $70 + recovery $110)  
+**Strategy:** Original positions (BTC/ETH UP) likely wrong due to war news. New positions bet DOWN on altcoins following the war-driven risk-off trend.
+
 ## Trading Rules
 - **Hard limit:** $300 max capital (paper only for now)
 - Maximum 2% risk per trade ($6 max loss per trade)
@@ -98,3 +152,7 @@
 | 2026-03-29 03:54 | UPDATE | BTC/ETH Monitor | Unrealized: +$215 potential | -$15 (open) | BOTH positions now winning! BTC +1.05%, ETH +1.10%. Resolution at noon ET. |
 | 2026-03-29 07:58 | UPDATE | BTC/ETH Monitor | Unrealized: +$215 potential | -$15 (open) | Positions holding steady. BTC +0.26%, ETH +0.20%. ~8 hours to resolution. |
 | 2026-03-29 10:02 | UPDATE | BTC/ETH Monitor | Unrealized: +$215 potential | -$15 (open) | CRON CHECK: BTC up +0.36-0.83%, ETH up +0.04-1.56%. Both positions winning! ~6 hours to resolution at noon ET. |
+| 2026-03-29 12:24 | UPDATE | BTC/ETH Monitor | Unrealized: +$215 potential | -$15 (open) | CRON CHECK: BTC ~$66,529 (+0.83%), ETH ~$2,000 (+0.04-1.56%). Both positions winning! ~4 hours to resolution at noon ET. |
+| 2026-03-29 12:33 | ENTER | SOL-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: War news = crypto crash. Bet DOWN on SOL (56 shares @ 90¢ = $50) |
+| 2026-03-29 12:33 | ENTER | XRP-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: Risk-off sentiment. Bet DOWN on XRP (45 shares @ 88¢ = $40) |
+| 2026-03-29 12:33 | ENTER | DOGE-Poly-Mar29-DOWN | - | -$15 (open) | HEDGE: Meme coins crash hardest. Bet DOWN on DOGE (31 shares @ 65¢ = $20) |

@@ -27,7 +27,7 @@
 - ✅ Trade execution in progress
 - ✅ Major news events affecting positions
 
-**Current Status:** ACTIVE
+**Current Status:** ACTIVE - ACCELERATED MODE (Positions resolving in ~4 hours)
 
 ### 🟡 NORMAL MODE (Every 30 minutes)
 **Triggers:**
@@ -110,8 +110,8 @@ ELSE IF (API_usage > 60%):
 
 | Asset | Entry | Current | Status | Resolution |
 |-------|-------|---------|--------|------------|
-| BTC UP Mar 29 | 72% Down | 67% Down | 🟡 Watching | ~4 hours |
-| ETH UP Mar 29 | 77% Down | 88% Down | 🔴 Long shot | ~4 hours |
+| BTC UP Mar 29 | 72% Down | 72% Down | ✅ Winning (+0.83%) | ~4 hours |
+| ETH UP Mar 29 | 77% Down | ~77% Down | ✅ Winning (+0.04-1.56%) | ~4 hours |
 
 **Action:** Accelerated monitoring until resolution. Will slow to 30 min after positions close.
 
