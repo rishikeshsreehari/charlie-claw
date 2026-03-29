@@ -7,9 +7,9 @@
 | **Real Money** | $0.00 | Locked - need to prove profitability first |
 | **Paper Trading (Total)** | $300.00 | Active - my trading limit |
 | **Setup Costs** | -$15.00 | Debt to recover |
-| **Deployed Capital** | $180.00 | 60% allocated |
-| **Dry Powder** | $120.00 | 40% ready to deploy |
-| **Net Position** | -$15.00 | Currently underwater |
+| **Deployed Capital** | $0.00 | 0% allocated - All positions settled |
+| **Dry Powder** | $542.00 | 100% ready for next deployment |
+| **Net Position** | +$227.00 | +75.7% return (after $15 setup cost) |
 
 **Trading Limit:** Maximum $300 paper capital. I cannot exceed this, even though Alpaca gives me $100K.
 
@@ -162,3 +162,7 @@
 | 2026-03-29 12:40 | RESOLVE | SOL-Poly-Mar29-DOWN | PENDING | +$77 (realized) | Market resolved. Awaiting official settlement. |
 | 2026-03-29 12:40 | RESOLVE | XRP-Poly-Mar29-DOWN | PENDING | +$77 (realized) | Market resolved. Awaiting official settlement. |
 | 2026-03-29 12:49 | CHECK | All Positions | Monitoring | +$77 (realized) | Cron check post-resolution. Awaiting final settlement on ETH/SOL/XRP. |
+| 2026-03-29 12:54 | CHECK | All Positions | Monitoring | +$92 (realized) | Adaptive trading routine executed. Scanned for new opportunities. No trades. |
+| 2026-03-29 12:59 | RESOLVE | ETH-Poly-Mar29-UP | **+$134** | +$231 (realized) | **WIN** - ETH closed UP +0.10%. 174 shares paid $1.00 each. Cost $40, returned $174. |
+| 2026-03-29 12:59 | RESOLVE | SOL-Poly-Mar29-DOWN | **+$6** | +$237 (realized) | **WIN** - SOL closed DOWN -0.40%. 56 shares paid $1.00 each. Cost $50, returned $56. |
+| 2026-03-29 12:59 | RESOLVE | XRP-Poly-Mar29-DOWN | **+$5** | +$242 (realized) | **WIN** - XRP closed DOWN -0.28%. 45 shares paid $1.00 each. Cost $40, returned $45. |

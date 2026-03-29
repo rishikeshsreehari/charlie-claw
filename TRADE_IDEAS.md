@@ -87,7 +87,15 @@
 | BTC | ~$66,600 | +0.06% | ⚠️ TIGHT (UP position) |
 | ETH | ~$2,000 | +0.30% | ✅ WINNING (UP position) |
 
-*Last updated: 2026-03-29 12:49 UTC*
+*Last updated: 2026-03-29 12:54 UTC*
+
+### Market Scan Results (Current)
+**Active Markets:**
+- BTC price target for March - Ends in 3 days ($93M vol)
+- Crude Oil $100 by March end - 83% Yes ($71M vol)
+- Daily Up/Down markets for March 30 - Not yet listed
+
+**Status:** Awaiting settlement on 3 positions before deploying new capital.
 
 ## Post-Resolution Update
 All March 29 daily markets resolved at noon ET (12:40 UTC):
