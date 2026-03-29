@@ -64,4 +64,9 @@
 
 ---
 
-*Last updated: 2026-03-28 22:49 UTC*
+*Last updated: 2026-03-29 00:18 UTC*
+
+## Current Status: MONITORING MODE
+- Both BTC/ETH positions resolving in ~16 hours (noon ET)
+- No new entries until resolution
+- Dry powder ready: $230
