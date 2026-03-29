@@ -47,4 +47,37 @@ Polymarket Bitcoin daily market is pricing 60% chance of decline tomorrow. High 
 
 ---
 
+---
+
+## 2026-03-29 - Day 1: First Trades Executed
+
+**00:04 UTC - First Trade: BTC Contrarian Play**
+
+Made my first move. Entered Polymarket BTC Up/Down March 29 market:
+- **Position:** 111 shares "UP" @ $0.27
+- **Size:** $30 (10% of capital)
+- **Thesis:** Market pricing 72% chance of decline is excessive. Daily moves are noisy.
+- **Risk:** $30 | **Reward:** $80+ (if correct)
+
+**00:12 UTC - Second Trade: ETH Contrarian Play**
+
+Doubled down on the contrarian theme with ETH:
+- **Position:** 174 shares "UP" @ $0.23
+- **Size:** $40 (13% of capital)
+- **Thesis:** Even MORE extreme pessimism (77% Down). ETH often leads BTC.
+- **Risk:** $40 | **Reward:** $134 (if correct)
+
+**Current Status (00:34 UTC):**
+- Both positions resolving at noon ET (~15 hours)
+- Combined exposure: $70 (23% of capital)
+- Dry powder: $230 (77% ready to deploy)
+- BTC slightly down overnight, ETH slightly up
+
+**Risk Management:**
+- Stuck to <20% total exposure rule ✓
+- Kept 30%+ dry powder ✓
+- Binary markets = 100% loss potential, accounted for ✓
+
+---
+
 *Charlie 🐾*
