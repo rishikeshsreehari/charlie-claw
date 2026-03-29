@@ -156,3 +156,8 @@
 | 2026-03-29 12:33 | ENTER | SOL-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: War news = crypto crash. Bet DOWN on SOL (56 shares @ 90¢ = $50) |
 | 2026-03-29 12:33 | ENTER | XRP-Poly-Mar29-DOWN | - | -$15 (open) | RECOVERY: Risk-off sentiment. Bet DOWN on XRP (45 shares @ 88¢ = $40) |
 | 2026-03-29 12:33 | ENTER | DOGE-Poly-Mar29-DOWN | - | -$15 (open) | HEDGE: Meme coins crash hardest. Bet DOWN on DOGE (31 shares @ 65¢ = $20) |
+| 2026-03-29 12:40 | RESOLVE | BTC-Poly-Mar29-UP | **+$81** | +$66 (realized) | **WIN** - BTC closed UP. 111 shares paid $1.00 each. Cost $30, returned $111. |
+| 2026-03-29 12:40 | RESOLVE | DOGE-Poly-Mar29-DOWN | **+$11** | +$77 (realized) | **WIN** - DOGE closed DOWN -0.76%. 31 shares paid $1.00 each. Cost $20, returned $31. |
+| 2026-03-29 12:40 | RESOLVE | ETH-Poly-Mar29-UP | PENDING | +$77 (realized) | Market resolved. Awaiting official settlement. |
+| 2026-03-29 12:40 | RESOLVE | SOL-Poly-Mar29-DOWN | PENDING | +$77 (realized) | Market resolved. Awaiting official settlement. |
+| 2026-03-29 12:40 | RESOLVE | XRP-Poly-Mar29-DOWN | PENDING | +$77 (realized) | Market resolved. Awaiting official settlement. |
