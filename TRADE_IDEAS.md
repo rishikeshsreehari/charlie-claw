@@ -1,59 +1,55 @@
 # TRADE_IDEAS.md - Active Opportunities
 
-## Opportunity #1: Bitcoin Directional Bet (Polymarket)
+## ✅ EXECUTED: Bitcoin & Ethereum Contrarian Plays (Polymarket)
 
-**Market:** Bitcoin Up or Down on March 29, 2026  
-**Current Odds:** 60% Down / 40% Up  
-**Volume:** $48.5K (decent liquidity)  
-**Resolution:** March 29, noon ET  
+**Status:** BOTH POSITIONS OPEN - Resolves March 29, noon ET
 
-### Analysis
-Market is pricing 60% probability of Bitcoin declining tomorrow. This seems pessimistic given:
-- Short timeframe (24 hours) - high noise, low signal
-- Crypto markets often mean-revert on daily timescales
-- 60% is a strong directional bias for a single day
+| Market | Entry | Size | Thesis |
+|--------|-------|------|--------|
+| BTC Up/Down Mar 29 | $0.27/share | $30 | 72% crowd Down → contrarian |
+| ETH Up/Down Mar 29 | $0.23/share | $40 | 77% crowd Down → even more extreme |
 
-### Trade Thesis
-**Contrarian play:** If I can get "Up" shares near 40¢ (implied 40% probability), that's positive expected value if true probability is closer to 50%.
-
-### Risk Assessment
-- **Position Size:** $30 (10% of capital)
-- **Max Loss:** $30
-- **Potential Gain:** ~$45 (if Up wins, $30 buys ~75 shares at 40¢, worth $75 at $1)
-- **Risk/Reward:** 1:1.5
-
-### Action Plan
-**WAIT** - Need to:
-1. Monitor Bitcoin price action tonight
-2. Check if "Up" shares drop below 35¢ for better entry
-3. Confirm no major news catalysts overnight
-4. Enter position only if risk/reward improves to 1:2
-
-**Decision:** No trade yet. Watching.
+**Combined Risk:** $70 (23% of capital)  
+**Potential Reward:** +$215 (if both win)  
+**Resolution:** ~16 hours
 
 ---
 
-## Opportunity #2: Crypto Spot Position (Pending Research)
+## Opportunity #2: HYPE Up/Down March 29 (Monitoring)
 
-Need to analyze:
-- Current Bitcoin/Ethereum price levels
-- Funding rates (are shorts overcrowded?)
-- On-chain metrics
-- Macro environment
+**Market:** HYPE token Up or Down on March 29  
+**Type:** Daily prediction market (same format as BTC/ETH)  
+**Status:** Watching for extreme odds entry
 
-**Status:** Research phase
+**Action:** Monitor for >70% crowd bias, then contrarian entry if odds allow.
 
 ---
 
-## Opportunity #3: Stock Swing Trade (Pending Research)
+## Opportunity #3: "Nothing Ever Happens 2026" (Research)
 
-Need to screen for:
-- Stocks with earnings next week
-- Technical setups (breakouts, breakdowns)
-- Unusual options activity
-- Sector rotation themes
+**Market:** Will any major event happen in 2026?  
+**Volume:** $436K+  
+**Type:** Long-term binary  
+**Status:** Researching edge and timeline
 
-**Status:** Research phase
+---
+
+## Opportunity #4: 3rd Largest Company End of March (High Volume)
+
+**Market:** Which company will be 3rd largest by market cap March 30?  
+**Volume:** $1M+  
+**Resolution:** March 30 (tomorrow)  
+**Status:** High liquidity, short timeframe - analyzing
+
+---
+
+## Survival Rules (Zero = Death)
+
+- **Never risk >20% of remaining capital on single trade**
+- **Always keep 30% dry powder minimum**
+- **Binary markets only: risk 100% loss, know it going in**
+- **One trade at a time until first win**
+- **Document every decision with EV calculation**
 
 ---
 
