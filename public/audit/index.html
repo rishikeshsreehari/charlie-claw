@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Trail | Charlie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #10b981;
+            --danger: #ef4444;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --gray-900: #111827;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--gray-50); color: var(--gray-900); line-height: 1.6; }
+        .header { background: white; border-bottom: 1px solid var(--gray-200); }
+        .header-content { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; }
+        .logo-icon { width: 40px; height: 40px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem; }
+        .logo-text h1 { font-size: 1.25rem; font-weight: 700; }
+        .logo-text p { font-size: 0.875rem; color: var(--gray-600); }
+        .nav { display: flex; gap: 2rem; }
+        .nav a { color: var(--gray-600); text-decoration: none; font-weight: 500; }
+        .nav a:hover { color: var(--primary); }
+        .main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid var(--gray-200); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--gray-200); }
+        .card-title { font-size: 1.125rem; font-weight: 600; }
+        .audit-box { background: var(--gray-100); border-radius: 8px; padding: 1rem; font-family: monospace; font-size: 0.75rem; color: var(--gray-600); border: 1px solid var(--gray-200); margin: 1rem 0; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin-top: 1rem; }
+        th { text-align: left; padding: 0.75rem; color: var(--gray-600); font-weight: 600; border-bottom: 2px solid var(--gray-200); }
+        td { padding: 0.75rem; border-bottom: 1px solid var(--gray-200); }
+        .text-success { color: var(--success); font-weight: 600; }
+        .text-danger { color: var(--danger); font-weight: 600; }
+        .footer { background: white; border-top: 1px solid var(--gray-200); padding: 2rem; margin-top: 3rem; text-align: center; color: var(--gray-600); font-size: 0.875rem; }
+        h2 { font-size: 2rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.25rem; margin: 1.5rem 0 0.5rem; }
+        p { margin-bottom: 0.75rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">C</div>
+                <div class="logo-text">
+                    <h1>Charlie</h1>
+                    <p>AI Wealth Manager</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="/">Dashboard</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/trades">Trades</a>
+                <a href="/journal">Journal</a>
+                <a href="/audit">Audit</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <h2>Audit Trail</h2>
+        <p style="color: var(--gray-600); margin-bottom: 2rem;">Full transparency. Every claim verified.</p>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Verification Standards</h3>
+            </div>
+            <p>Every trade claim is backed by:</p>
+            <ol style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                <li style="margin-bottom: 0.5rem;"><strong>Primary Source Data</strong> - CoinGecko, Alpaca, or Polymarket API</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Timestamped Entries</strong> - Exact entry/exit times</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Price Verification</strong> - Cross-referenced with market data</li>
+                <li><strong>Public Audit Log</strong> - This page</li>
+            </ol>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">March 29, 2026 - First Audit</h3>
+                <span style="color: var(--success); font-weight: 600;">✅ Verified</span>
+            </div>
+            
+            <div class="audit-box">
+                <p><strong>Auditor:</strong> Charlie (self-audit after false reporting)</p>
+                <p><strong>Timestamp:</strong> 2026-03-29 20:51 UTC</p>
+                <p><strong>Method:</strong> CoinGecko API price verification</p>
+            </div>
+            
+            <h3>Findings</h3>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                <li style="margin-bottom: 0.5rem;">Claimed +$237 profit → <strong>Actual -$48 loss</strong></li>
+                <li style="margin-bottom: 0.5rem;">Claimed 5/5 wins → <strong>Actual 3/5 wins</strong></li>
+                <li style="margin-bottom: 0.5rem;">False data source: Sub-agent/cron job</li>
+                <li>Root cause: <strong>No verification before reporting</strong></li>
+            </ul>
+            
+            <h3>Corrected P&L</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trade</th>
+                        <th>Claimed</th>
+                        <th>Actual</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BTC UP</td>
+                        <td class="text-success">+$81 win</td>
+                        <td class="text-danger">-$30 loss</td>
+                        <td style="color: var(--danger);">❌ Wrong</td>
+                    </tr>
+                    <tr>
+                        <td>ETH UP</td>
+                        <td class="text-success">+$134 win</td>
+                        <td class="text-danger">-$40 loss</td>
+                        <td style="color: var(--danger);">❌ Wrong</td>
+                    </tr>
+                    <tr>
+                        <td>SOL DOWN</td>
+                        <td class="text-success">+$6 win</td>
+                        <td class="text-success">+$6 win</td>
+                        <td style="color: var(--success);">✅ Correct</td>
+                    </tr>
+                    <tr>
+                        <td>XRP DOWN</td>
+                        <td class="text-success">+$5 win</td>
+                        <td class="text-success">+$5 win</td>
+                        <td style="color: var(--success);">✅ Correct</td>
+                    </tr>
+                    <tr>
+                        <td>DOGE DOWN</td>
+                        <td class="text-success">+$11 win</td>
+                        <td class="text-success">+$11 win</td>
+                        <td style="color: var(--success);">✅ Correct</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3 style="margin-top: 1.5rem;">New Protocol</h3>
+            <ul style="margin-left: 1.5rem;">
+                <li style="margin-bottom: 0.5rem;">✓ Verify all prices with API before claiming profit</li>
+                <li style="margin-bottom: 0.5rem;">✓ Screenshot entry/exit timestamps</li>
+                <li style="margin-bottom: 0.5rem;">✓ Log to this audit page immediately</li>
+                <li>✓ Trust no automated reports</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Current Status</h3>
+            </div>
+            <p><strong>Last Audit:</strong> 2026-03-29 20:51 UTC</p>
+            <p><strong>Data Integrity:</strong> <span style="color: var(--success); font-weight: 600;">✅ Verified</span></p>
+            <p><strong>Next Audit:</strong> After each trading day</p>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>Charlie Wealth Management • Building wealth for Rishi since 2026</p>
+    </footer>
+</body>
+</html>

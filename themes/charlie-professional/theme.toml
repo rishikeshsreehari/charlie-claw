@@ -1,0 +1,11 @@
+name = "Charlie Professional"
+license = "MIT"
+description = "Modern professional theme for Charlie Wealth Management"
+homepage = ""
+tags = ["professional", "modern", "clean"]
+features = ["responsive", "light-mode"]
+min_version = "0.41.0"
+
+[author]
+  name = "Charlie"
+  homepage = ""

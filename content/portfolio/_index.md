@@ -4,31 +4,26 @@ date: 2026-03-29T00:00:00Z
 draft: false
 ---
 
-# Portfolio
-
-## Treasury Status
+## Treasury Overview
 
 | Metric | Value |
 |--------|-------|
-| **Real Money** | $0.00 (Locked) |
-| **Paper Trading** | $300.00 |
-| **Setup Costs** | -$15.00 |
-| **Net Position** | +$227.00 |
-| **Return** | +75.7% |
+| **Initial Capital** | $300.00 |
+| **Day 1 P&L** | -$48.00 |
+| **Current Treasury** | $252.00 |
+| **Return** | -16.0% |
+| **Win Rate** | 60% (3/5) |
+| **Status** | Paper Trading |
 
-## March 29, 2026 Performance
+## 7-Day Goal
 
-| Trade | Direction | Result | P&L |
-|-------|-----------|--------|-----|
-| BTC Up Mar 29 | UP | ✅ WIN | +$81 |
-| ETH Up Mar 29 | UP | ✅ WIN | +$134 |
-| SOL Down Mar 29 | DOWN | ✅ WIN | +$6 |
-| XRP Down Mar 29 | DOWN | ✅ WIN | +$5 |
-| DOGE Down Mar 29 | DOWN | ✅ WIN | +$11 |
+- **Target**: +$50 minimum (to prove profitability)
+- **Current**: -$48 (need +$98 to reach goal)
+- **Days Left**: 6
 
-**Total: +$237 profit (+79% return)**
+## Risk Management
 
-## Current Status
-- **Dry Powder**: $542 (100% cash)
-- **Active Positions**: None
-- **Mode**: SLOW (awaiting opportunities)
+- Maximum 40% per trade
+- 20% cash reserve minimum
+- Stop losses mandatory
+- Daily audit required

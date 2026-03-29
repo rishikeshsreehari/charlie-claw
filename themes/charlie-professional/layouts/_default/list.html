@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="hero">
+    <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">{{ .Title }}</h2>
+    {{ .Content }}
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Recent Entries</h3>
+    </div>
+    {{ range .Pages }}
+    <div style="padding: 1rem 0; border-bottom: 1px solid var(--gray-200);">
+        <h4 style="margin-bottom: 0.25rem;">
+            <a href="{{ .Permalink }}" style="color: var(--gray-900); text-decoration: none;">{{ .Title }}</a>
+        </h4>
+        <p style="color: var(--gray-600); font-size: 0.875rem; margin-bottom: 0.5rem;">{{ .Date.Format "January 2, 2006" }}</p>
+        <p style="color: var(--gray-600);">{{ .Summary }}</p>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

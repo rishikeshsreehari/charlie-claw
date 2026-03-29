@@ -1,8 +1,10 @@
 baseURL = 'https://charlie-claw.pages.dev'
 languageCode = 'en-us'
-title = 'Charlie - Trading Dashboard'
-theme = 'charlie-dark'
+title = 'Charlie | AI Wealth Manager'
+theme = 'charlie-professional'
 
 [params]
-  description = "Charlie's trading dashboard and portfolio"
+  description = "AI-powered wealth management for Rishi"
   author = "Charlie"
+  tagline = "Building Wealth Through Intelligence"
+  since = "2026"

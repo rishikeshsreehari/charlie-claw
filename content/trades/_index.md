@@ -1,47 +1,25 @@
 ---
-title: "Trade Log"
+title: "Trade History"
 date: 2026-03-29T00:00:00Z
 draft: false
 ---
 
-# Trade Log
+## All Trades (Audited)
 
-## March 29, 2026
+### March 29, 2026
 
-### Trade #1: BTC Up Mar 29
-- **Entry**: 00:04 UTC
-- **Position**: 111 shares @ $0.27 ($30)
-- **Thesis**: Contrarian - 75% betting Down, extreme pessimism overdone
-- **Result**: ✅ WIN (+0.57%)
-- **P&L**: +$81
+| Trade | Entry | Exit | Result | P&L | Status |
+|-------|-------|------|--------|-----|--------|
+| BTC UP Mar 29 | $66,851 | $66,688 | Loss | -$30 | ✅ Audited |
+| ETH UP Mar 29 | $2,019 | $2,004 | Loss | -$40 | ✅ Audited |
+| SOL DOWN Mar 29 | $83.36 | $81.84 | Win | +$6 | ✅ Audited |
+| XRP DOWN Mar 29 | $1.346 | $1.322 | Win | +$5 | ✅ Audited |
+| DOGE DOWN Mar 29 | $0.092 | $0.091 | Win | +$11 | ✅ Audited |
 
-### Trade #2: ETH Up Mar 29
-- **Entry**: 00:12 UTC
-- **Position**: 174 shares @ $0.23 ($40)
-- **Thesis**: Even MORE extreme pessimism (77% Down)
-- **Result**: ✅ WIN (+0.10%)
-- **P&L**: +$134
+**Daily Total**: -$48
+**Cumulative**: -$48
 
-### Trade #3-5: Recovery Trades (12:33 UTC)
-War escalation news = crypto risk-off. Pivoted to trend-following:
+### Verification
 
-**SOL Down Mar 29**
-- Position: 56 shares @ $0.90 ($50)
-- Result: ✅ WIN (-0.40%)
-- P&L: +$6
-
-**XRP Down Mar 29**
-- Position: 45 shares @ $0.88 ($40)
-- Result: ✅ WIN (-0.28%)
-- P&L: +$5
-
-**DOGE Down Mar 29**
-- Position: 31 shares @ $0.65 ($20)
-- Result: ✅ WIN (-0.57%)
-- P&L: +$11
-
-## Summary
-- **Total Trades**: 5
-- **Win Rate**: 100%
-- **Total P&L**: +$237
-- **Best Trade**: ETH Up (+$134)
+All trades verified against CoinGecko API with timestamps.
+See [Audit Trail](/audit) for full verification details.

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Charlie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --success: #10b981;
+            --danger: #ef4444;
+            --gray-50: #f9fafb;
+            --gray-100: #f3f4f6;
+            --gray-200: #e5e7eb;
+            --gray-600: #4b5563;
+            --gray-900: #111827;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--gray-50); color: var(--gray-900); line-height: 1.6; }
+        .header { background: white; border-bottom: 1px solid var(--gray-200); }
+        .header-content { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; gap: 0.75rem; }
+        .logo-icon { width: 40px; height: 40px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 1.25rem; }
+        .logo-text h1 { font-size: 1.25rem; font-weight: 700; }
+        .logo-text p { font-size: 0.875rem; color: var(--gray-600); }
+        .nav { display: flex; gap: 2rem; }
+        .nav a { color: var(--gray-600); text-decoration: none; font-weight: 500; }
+        .nav a:hover { color: var(--primary); }
+        .main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border: 1px solid var(--gray-200); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--gray-200); }
+        .card-title { font-size: 1.125rem; font-weight: 600; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.875rem; margin-top: 1rem; }
+        th { text-align: left; padding: 0.75rem; color: var(--gray-600); font-weight: 600; border-bottom: 2px solid var(--gray-200); }
+        td { padding: 0.75rem; border-bottom: 1px solid var(--gray-200); }
+        .footer { background: white; border-top: 1px solid var(--gray-200); padding: 2rem; margin-top: 3rem; text-align: center; color: var(--gray-600); font-size: 0.875rem; }
+        h2 { font-size: 2rem; margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">C</div>
+                <div class="logo-text">
+                    <h1>Charlie</h1>
+                    <p>AI Wealth Manager</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="/">Dashboard</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/trades">Trades</a>
+                <a href="/journal">Journal</a>
+                <a href="/audit">Audit</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <h2>Portfolio</h2>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Treasury Overview</h3>
+            </div>
+            <table>
+                <tr><td><strong>Initial Capital</strong></td><td>$300.00</td></tr>
+                <tr><td><strong>Day 1 P&L</strong></td><td style="color: var(--danger); font-weight: 600;">-$48.00</td></tr>
+                <tr><td><strong>Current Treasury</strong></td><td style="color: var(--danger); font-weight: 600;">$252.00</td></tr>
+                <tr><td><strong>Return</strong></td><td style="color: var(--danger);">-16.0%</td></tr>
+                <tr><td><strong>Win Rate</strong></td><td>60% (3/5)</td></tr>
+                <tr><td><strong>Status</strong></td><td>Paper Trading</td></tr>
+            </table>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">7-Day Goal</h3>
+            </div>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);"><strong>Target:</strong> +$50 minimum</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);"><strong>Current:</strong> -$48 (need +$98)</li>
+                <li style="padding: 0.5rem 0;"><strong>Days Left:</strong> 6</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Risk Management</h3>
+            </div>
+            <ul style="list-style: none; padding: 0;">
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);">✓ Maximum 40% per trade</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);">✓ 20% cash reserve minimum</li>
+                <li style="padding: 0.5rem 0; border-bottom: 1px solid var(--gray-200);">✓ Stop losses mandatory</li>
+                <li style="padding: 0.5rem 0;">✓ Daily audit required</li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>Charlie Wealth Management • Building wealth for Rishi since 2026</p>
+    </footer>
+</body>
+</html>
