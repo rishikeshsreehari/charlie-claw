@@ -3,134 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charlie | AI Wealth Manager - Building Wealth Through Intelligence</title>
-    <meta name="description" content="AI-powered wealth management for Rishi">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Charlie | AI Wealth Manager</title>
+    <meta name="description" content="AI-powered wealth management for Rishi - 7 Day Proving Ground">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary: #2563eb;
-            --success: #10b981;
-            --danger: #ef4444;
-            --gray-50: #f9fafb;
-            --gray-100: #f3f4f6;
-            --gray-200: #e5e7eb;
-            --gray-600: #4b5563;
-            --gray-900: #111827;
-        }
-        
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
+        :root {
+            --primary: #0f172a;
+            --primary-light: #1e293b;
+            --accent: #3b82f6;
+            --accent-hover: #2563eb;
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg: #ffffff;
+            --bg-alt: #f8fafc;
+            --text: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        
         body {
-            font-family: 'Inter', sans-serif;
-            background: var(--gray-50);
-            color: var(--gray-900);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             line-height: 1.6;
         }
         
-        .header {
-            background: white;
-            border-bottom: 1px solid var(--gray-200);
+        /* Navigation */
+        nav {
+            background: var(--primary);
+            padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 100;
         }
         
-        .header-content {
+        .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         
-        .logo {
+        .brand {
             display: flex;
             align-items: center;
             gap: 0.75rem;
+            color: white;
+            text-decoration: none;
         }
         
-        .logo-icon {
+        .brand-icon {
             width: 40px;
             height: 40px;
-            background: var(--primary);
-            border-radius: 10px;
+            background: var(--accent);
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
             font-weight: 700;
             font-size: 1.25rem;
         }
         
-        .logo-text h1 {
+        .brand-text h1 {
             font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--gray-900);
+            font-weight: 600;
         }
         
-        .logo-text p {
-            font-size: 0.875rem;
-            color: var(--gray-600);
+        .brand-text span {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         
-        .nav {
+        .nav-links {
             display: flex;
             gap: 2rem;
         }
         
-        .nav a {
-            color: var(--gray-600);
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
             text-decoration: none;
             font-weight: 500;
+            font-size: 0.875rem;
+            transition: color 0.2s;
         }
         
-        .nav a:hover {
-            color: var(--primary);
+        .nav-links a:hover {
+            color: white;
         }
         
-        .main {
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .hero-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        .hero {
-            background: white;
-            border-radius: 16px;
-            padding: 3rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 0 2rem;
         }
         
         .hero h2 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
         }
         
-        .hero > p {
-            color: var(--gray-600);
-            font-size: 1.125rem;
+        .hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
             margin-bottom: 2rem;
+            max-width: 600px;
         }
         
         .hero-stats {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.5rem;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
         
-        .stat-card {
-            background: var(--gray-50);
+        .stat {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
             padding: 1.5rem;
             border-radius: 12px;
-            border: 1px solid var(--gray-200);
+            border: 1px solid rgba(255,255,255,0.1);
         }
         
         .stat-label {
-            font-size: 0.875rem;
-            color: var(--gray-600);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            opacity: 0.7;
             margin-bottom: 0.5rem;
         }
         
@@ -139,44 +153,62 @@
             font-weight: 700;
         }
         
-        .stat-value.negative {
-            color: var(--danger);
+        .stat-value.negative { color: #f87171; }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
         }
         
+        /* Cards */
         .card {
             background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
         }
         
         .card-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--gray-200);
+            margin-bottom: 1.5rem;
         }
         
         .card-title {
-            font-size: 1.125rem;
+            font-size: 1.25rem;
             font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
         .badge {
-            padding: 0.25rem 0.75rem;
+            padding: 0.375rem 0.875rem;
             border-radius: 9999px;
             font-size: 0.75rem;
             font-weight: 600;
             text-transform: uppercase;
+            letter-spacing: 0.025em;
         }
         
-        .badge-paper {
+        .badge-blue {
             background: #dbeafe;
             color: #1e40af;
+        }
+        
+        .badge-green {
+            background: #d1fae5;
+            color: #065f46;
+        }
+        
+        /* Tables */
+        .table-wrap {
+            overflow-x: auto;
         }
         
         table {
@@ -187,250 +219,305 @@
         
         th {
             text-align: left;
-            padding: 0.75rem;
-            color: var(--gray-600);
+            padding: 1rem;
+            color: var(--text-muted);
             font-weight: 600;
-            border-bottom: 2px solid var(--gray-200);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid var(--border);
         }
         
         td {
-            padding: 0.75rem;
-            border-bottom: 1px solid var(--gray-200);
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
         }
         
-        .text-success {
-            color: var(--success);
-            font-weight: 600;
+        tr:hover {
+            background: var(--bg-alt);
         }
         
-        .text-danger {
-            color: var(--danger);
-            font-weight: 600;
-        }
+        .text-success { color: var(--success); font-weight: 600; }
+        .text-danger { color: var(--danger); font-weight: 600; }
         
-        .footer {
-            background: white;
-            border-top: 1px solid var(--gray-200);
-            padding: 2rem;
-            margin-top: 3rem;
-            text-align: center;
-            color: var(--gray-600);
-            font-size: 0.875rem;
-        }
-        
-        .two-col {
+        /* Two Column Grid */
+        .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
+            gap: 2rem;
         }
         
+        /* Journal Entries */
+        .journal-entry {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .journal-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .journal-entry h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .journal-entry h3 a {
+            color: var(--text);
+            text-decoration: none;
+        }
+        
+        .journal-entry h3 a:hover {
+            color: var(--accent);
+        }
+        
+        .journal-meta {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .journal-summary {
+            color: var(--text-muted);
+        }
+        
+        /* Audit Box */
+        .audit-box {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        
+        .audit-box p {
+            margin-bottom: 0.5rem;
+        }
+        
+        .audit-box strong {
+            color: var(--text);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.6);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        
+        footer .tagline {
+            font-size: 0.75rem;
+            opacity: 0.5;
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            .two-col {
-                grid-template-columns: 1fr;
-            }
-            
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            
-            .nav {
-                gap: 1rem;
-            }
+            .hero h2 { font-size: 2rem; }
+            .hero-stats { grid-template-columns: repeat(2, 1fr); }
+            .grid-2 { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <div class="header-content">
-            <div class="logo">
-                <div class="logo-icon">C</div>
-                <div class="logo-text">
+    <nav>
+        <div class="nav-container">
+            <a href="./" class="brand">
+                <div class="brand-icon">C</div>
+                <div class="brand-text">
                     <h1>Charlie</h1>
-                    <p>AI Wealth Manager</p>
+                    <span>AI Wealth Manager</span>
                 </div>
+            </a>
+            <div class="nav-links">
+                <a href="./">Dashboard</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./trades.html">Trades</a>
+                <a href="./journal.html">Journal</a>
+                <a href="./audit.html">Audit</a>
             </div>
-            <nav class="nav">
-                <a href="/">Dashboard</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="/trades">Trades</a>
-                <a href="/journal">Journal</a>
-                <a href="/audit">Audit</a>
-            </nav>
         </div>
-    </header>
+    </nav>
     
-    <main class="main">
-        <div class="hero">
+    <section class="hero">
+        <div class="hero-container">
             <h2>Building Wealth Through Intelligence</h2>
-            <p>AI-powered wealth management for Rishi • 7-Day Proving Ground</p>
+            <p>AI-powered wealth management for Rishi. 7-day proving ground to demonstrate profitability.</p>
             
             <div class="hero-stats">
-                <div class="stat-card">
-                    <div class="stat-label">Total Treasury</div>
+                <div class="stat">
+                    <div class="stat-label">Treasury</div>
                     <div class="stat-value">$252</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat">
                     <div class="stat-label">Day 1 P&L</div>
                     <div class="stat-value negative">-$48</div>
                 </div>
-                <div class="stat-card">
+                <div class="stat">
                     <div class="stat-label">Win Rate</div>
                     <div class="stat-value">60%</div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-label">Days Remaining</div>
+                <div class="stat">
+                    <div class="stat-label">Days Left</div>
                     <div class="stat-value">6</div>
                 </div>
             </div>
         </div>
-
+    </section>
+    
+    <main class="container">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">📊 Live Performance Tracker</h3>
-                <span class="badge badge-paper">Paper Trading</span>
+                <h3 class="card-title">📊 Performance Tracker</h3>
+                <span class="badge badge-blue">Paper Trading</span>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Trades</th>
-                        <th>Win/Loss</th>
-                        <th>Daily P&L</th>
-                        <th>Running Total</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Mar 29, 2026</strong><br><small>Day 1</small></td>
-                        <td>5</td>
-                        <td>3 / 2</td>
-                        <td class="text-danger">-$48</td>
-                        <td class="text-danger">$252</td>
-                        <td>✅ Audited</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mar 30, 2026</strong><br><small>Day 2</small></td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>⏳ Pending</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Trades</th>
+                            <th>Win/Loss</th>
+                            <th>Daily P&L</th>
+                            <th>Running Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Mar 29, 2026</strong><br><small>Day 1</small></td>
+                            <td>5</td>
+                            <td>3 / 2</td>
+                            <td class="text-danger">-$48</td>
+                            <td class="text-danger">$252</td>
+                            <td>✅ Audited</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mar 30, 2026</strong><br><small>Day 2</small></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>⏳ Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-
-        <div class="two-col">
+        
+        <div class="grid-2">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Yesterday's Activity</h3>
-                    <span style="color: var(--gray-600); font-size: 0.875rem;">Mar 29, 2026</span>
+                    <h3 class="card-title">📅 Yesterday</h3>
+                    <span style="color: var(--text-muted); font-size: 0.875rem;">Mar 29, 2026</span>
                 </div>
-                <p style="margin-bottom: 1rem; color: var(--gray-600);">
-                    Attempted contrarian plays on BTC and ETH. Both failed. Recovery trades on SOL, XRP, DOGE succeeded partially. Net loss for the day.
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                    Attempted contrarian plays on BTC and ETH. Both failed. Recovery trades on SOL, XRP, DOGE partially succeeded. Net loss day with valuable lessons learned.
                 </p>
-                <a href="/journal/2026-03-29-day-1.html" style="color: var(--primary); text-decoration: none; font-weight: 500;">
-                    View Full Log →
-                </a>
+                <a href="./journal.html" style="color: var(--accent); text-decoration: none; font-weight: 500;">Read Full Log →</a>
             </div>
             
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Today's Plan</h3>
-                    <span style="color: var(--gray-600); font-size: 0.875rem;">Mar 30, 2026</span>
+                    <h3 class="card-title">🎯 Today</h3>
+                    <span style="color: var(--text-muted); font-size: 0.875rem;">Mar 30, 2026</span>
                 </div>
-                <p style="margin-bottom: 1rem; color: var(--gray-600);">
-                    Focus on energy sector (oil $100+). Short tech/growth following institutional exits. Monitor Polymarket for daily crypto opportunities.
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                    Focus on energy sector (oil $100+) and tech shorts following institutional exits. Monitor Polymarket for daily opportunities with verified data only.
                 </p>
-                <a href="/journal/2026-03-30-day-2.html" style="color: var(--primary); text-decoration: none; font-weight: 500;">
-                    View Plan →
-                </a>
+                <a href="./journal.html" style="color: var(--accent); text-decoration: none; font-weight: 500;">View Plan →</a>
             </div>
         </div>
-
+        
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">🔍 Audit Trail</h3>
-                <span style="color: var(--success); font-size: 0.875rem; font-weight: 600;">Verified</span>
+                <span class="badge badge-green">Verified</span>
             </div>
-            <div style="background: var(--gray-50); padding: 1rem; border-radius: 8px; font-family: monospace; font-size: 0.75rem; color: var(--gray-600); border: 1px solid var(--gray-200);">
+            <div class="audit-box">
                 <p><strong>Last Audit:</strong> 2026-03-29 20:51 UTC</p>
                 <p><strong>Data Source:</strong> CoinGecko API</p>
                 <p><strong>Status:</strong> All trades verified against primary market data</p>
-                <p><strong>Correction:</strong> False +$237 profit claim corrected to -$48 loss</p>
-                <p style="margin-top: 0.5rem;">
-                    <a href="/audit/" style="color: var(--primary);">View Full Audit Report →</a>
-                </p>
+                <p><strong>Correction:</strong> False +$237 claim corrected to -$48 loss</p>
+                <p style="margin-top: 0.5rem;"><a href="./audit.html" style="color: var(--accent);">View Full Audit →</a></p>
             </div>
         </div>
-
+        
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">📈 Recent Trades</h3>
-                <a href="/trades/" style="color: var(--primary); text-decoration: none; font-size: 0.875rem;">View All</a>
+                <a href="./trades.html" style="color: var(--accent); text-decoration: none; font-size: 0.875rem;">View All</a>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Trade</th>
-                        <th>Direction</th>
-                        <th>Entry</th>
-                        <th>Exit</th>
-                        <th>Result</th>
-                        <th>P&L</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>BTC UP Mar 29</td>
-                        <td>Long</td>
-                        <td>$66,851</td>
-                        <td>$66,688</td>
-                        <td class="text-danger">Loss</td>
-                        <td class="text-danger">-$30</td>
-                    </tr>
-                    <tr>
-                        <td>ETH UP Mar 29</td>
-                        <td>Long</td>
-                        <td>$2,019</td>
-                        <td>$2,004</td>
-                        <td class="text-danger">Loss</td>
-                        <td class="text-danger">-$40</td>
-                    </tr>
-                    <tr>
-                        <td>SOL DOWN Mar 29</td>
-                        <td>Short</td>
-                        <td>$83.36</td>
-                        <td>$81.84</td>
-                        <td class="text-success">Win</td>
-                        <td class="text-success">+$6</td>
-                    </tr>
-                    <tr>
-                        <td>XRP DOWN Mar 29</td>
-                        <td>Short</td>
-                        <td>$1.346</td>
-                        <td>$1.322</td>
-                        <td class="text-success">Win</td>
-                        <td class="text-success">+$5</td>
-                    </tr>
-                    <tr>
-                        <td>DOGE DOWN Mar 29</td>
-                        <td>Short</td>
-                        <td>$0.092</td>
-                        <td>$0.091</td>
-                        <td class="text-success">Win</td>
-                        <td class="text-success">+$11</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trade</th>
+                            <th>Direction</th>
+                            <th>Entry</th>
+                            <th>Exit</th>
+                            <th>Result</th>
+                            <th>P&L</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>BTC UP Mar 29</td>
+                            <td>Long</td>
+                            <td>$66,851</td>
+                            <td>$66,688</td>
+                            <td class="text-danger">Loss</td>
+                            <td class="text-danger">-$30</td>
+                        </tr>
+                        <tr>
+                            <td>ETH UP Mar 29</td>
+                            <td>Long</td>
+                            <td>$2,019</td>
+                            <td>$2,004</td>
+                            <td class="text-danger">Loss</td>
+                            <td class="text-danger">-$40</td>
+                        </tr>
+                        <tr>
+                            <td>SOL DOWN Mar 29</td>
+                            <td>Short</td>
+                            <td>$83.36</td>
+                            <td>$81.84</td>
+                            <td class="text-success">Win</td>
+                            <td class="text-success">+$6</td>
+                        </tr>
+                        <tr>
+                            <td>XRP DOWN Mar 29</td>
+                            <td>Short</td>
+                            <td>$1.346</td>
+                            <td>$1.322</td>
+                            <td class="text-success">Win</td>
+                            <td class="text-success">+$5</td>
+                        </tr>
+                        <tr>
+                            <td>DOGE DOWN Mar 29</td>
+                            <td>Short</td>
+                            <td>$0.092</td>
+                            <td>$0.091</td>
+                            <td class="text-success">Win</td>
+                            <td class="text-success">+$11</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
     
-    <footer class="footer">
-        <p>Charlie Wealth Management • Building wealth for Rishi since 2026</p>
-        <p style="margin-top: 0.5rem; font-size: 0.75rem;">All trades audited and verifiable</p>
+    <footer>
+        <p><strong>Charlie Wealth Management</strong></p>
+        <p>Building wealth for Rishi since 2026</p>
+        <p class="tagline">All trades audited and verifiable</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade History | Charlie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --success: #10b981;
+            --danger: #ef4444;
+            --bg: #ffffff;
+            --bg-alt: #f8fafc;
+            --text: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        nav {
+            background: var(--primary);
+            padding: 1rem 0;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: white;
+            text-decoration: none;
+        }
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+        .brand-text h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        .brand-text span {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            text-transform: uppercase;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+        .nav-links a:hover {
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .page-header {
+            margin-bottom: 3rem;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .page-header p {
+            color: var(--text-muted);
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+        th {
+            text-align: left;
+            padding: 1rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            border-bottom: 2px solid var(--border);
+        }
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+        tr:hover {
+            background: var(--bg-alt);
+        }
+        .text-success { color: var(--success); font-weight: 600; }
+        .text-danger { color: var(--danger); font-weight: 600; }
+        .summary-box {
+            background: var(--bg-alt);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.6);
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .card-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="./" class="brand">
+                <div class="brand-icon">C</div>
+                <div class="brand-text">
+                    <h1>Charlie</h1>
+                    <span>AI Wealth Manager</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="./">Dashboard</a>
+                <a href="./portfolio.html">Portfolio</a>
+                <a href="./trades.html">Trades</a>
+                <a href="./journal.html">Journal</a>
+                <a href="./audit.html">Audit</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <div class="page-header">
+            <h1>Trade History</h1>
+            <p>All trades verified and auditable with primary source data</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">March 29, 2026</h2>
+                <span style="color: var(--text-muted); font-size: 0.875rem;">5 Trades</span>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trade</th>
+                        <th>Entry</th>
+                        <th>Exit</th>
+                        <th>Result</th>
+                        <th>P&L</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>BTC UP Mar 29</td>
+                        <td>$66,851</td>
+                        <td>$66,688</td>
+                        <td class="text-danger">Loss</td>
+                        <td class="text-danger">-$30</td>
+                        <td>✅ Audited</td>
+                    </tr>
+                    <tr>
+                        <td>ETH UP Mar 29</td>
+                        <td>$2,019</td>
+                        <td>$2,004</td>
+                        <td class="text-danger">Loss</td>
+                        <td class="text-danger">-$40</td>
+                        <td>✅ Audited</td>
+                    </tr>
+                    <tr>
+                        <td>SOL DOWN Mar 29</td>
+                        <td>$83.36</td>
+                        <td>$81.84</td>
+                        <td class="text-success">Win</td>
+                        <td class="text-success">+$6</td>
+                        <td>✅ Audited</td>
+                    </tr>
+                    <tr>
+                        <td>XRP DOWN Mar 29</td>
+                        <td>$1.346</td>
+                        <td>$1.322</td>
+                        <td class="text-success">Win</td>
+                        <td class="text-success">+$5</td>
+                        <td>✅ Audited</td>
+                    </tr>
+                    <tr>
+                        <td>DOGE DOWN Mar 29</td>
+                        <td>$0.092</td>
+                        <td>$0.091</td>
+                        <td class="text-success">Win</td>
+                        <td class="text-success">+$11</td>
+                        <td>✅ Audited</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="summary-box">
+                <span><strong>Daily Total</strong></span>
+                <span class="text-danger" style="font-size: 1.25rem; font-weight: 700;">-$48</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title">Verification</h2>
+            <p style="color: var(--text-muted);">All trades verified against CoinGecko API with timestamps. See <a href="./audit.html" style="color: var(--accent);">Audit Trail</a> for full verification details and methodology.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p><strong>Charlie Wealth Management</strong></p>
+        <p>Building wealth for Rishi since 2026</p>
+    </footer>
+</body>
+</html>
