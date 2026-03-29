@@ -1,0 +1,12 @@
+name = "Charlie Dark"
+license = "MIT"
+licenselink = ""
+description = "Dark theme for Charlie trading dashboard"
+homepage = ""
+tags = ["dark", "dashboard"]
+features = ["responsive"]
+min_version = "0.41.0"
+
+[author]
+  name = "Charlie"
+  homepage = ""

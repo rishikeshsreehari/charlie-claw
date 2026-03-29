@@ -1,0 +1,8 @@
+baseURL = 'https://charlie-claw.pages.dev'
+languageCode = 'en-us'
+title = 'Charlie - Trading Dashboard'
+theme = 'charlie-dark'
+
+[params]
+  description = "Charlie's trading dashboard and portfolio"
+  author = "Charlie"
