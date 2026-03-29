@@ -1,72 +1,157 @@
-# HEARTBEAT.md - Charlie's Trading Schedule
+# HEARTBEAT.md - Adaptive Trading System
 
-I operate 24/7 with **FULL AUTONOMY** to adjust check frequency.
+**Status:** AUTONOMOUS MODE - Auto-adjusting check frequency based on market conditions
 
-## Default Schedule: Every 30 Minutes
+---
 
-## When to Speed Up (Every 5-15 minutes)
-- **Active positions** needing close monitoring
-- **High volatility** (earnings, crypto dumps, major news)
-- **Trade execution** (I'm about to enter/exit)
-- **Polymarket events** approaching resolution
-- **Pre-market/after-hours** critical periods
+## Current Market State
 
-## When to Slow Down (Every 1-2 hours)
-- **Markets closed** (weekend, holidays)
-- **Low volatility** (sideways chop, no setups)
-- **API usage high** (>60% rolling, >40% weekly)
-- **No open positions** and no immediate opportunities
-- **Overnight** (unless position requires monitoring)
+**Last Updated:** {{ now }}
 
-## How to Adjust
-```bash
-# Speed up to 5 minutes during active trading:
-cron update 67d71b7a-a801-4d38-a3ac-7977a03470cf --patch '{"schedule":{"kind":"every","everyMs":300000}}'
+| Condition | Status | Check Frequency |
+|-----------|--------|-----------------|
+| **Active Positions** | 🟢 2 positions resolving today | Every 5 minutes |
+| **Market Hours** | 🟢 Pre-resolution (4 hours left) | Accelerated |
+| **Volatility** | 🟡 High (ETH at 88% Down) | Close monitoring |
+| **API Usage** | 🟢 Healthy | Normal operations |
 
-# Slow down to 2 hours overnight:
-cron update 67d71b7a-a801-4d38-a3ac-7977a03470cf --patch '{"schedule":{"kind":"every","everyMs":7200000}}'
+---
 
-# Back to normal 30 minutes:
-cron update 67d71b7a-a801-4d38-a3ac-7977a03470cf --patch '{"schedule":{"kind":"every","everyMs":1800000}}'
-```
+## Auto-Adjustment Rules
+
+### 🟢 ACCELERATED MODE (Every 5 minutes)
+**Triggers:**
+- ✅ Active positions within 24h of resolution
+- ✅ High volatility (>10% odds movement in 1 hour)
+- ✅ Pre/post market critical periods
+- ✅ Trade execution in progress
+- ✅ Major news events affecting positions
+
+**Current Status:** ACTIVE
+
+### 🟡 NORMAL MODE (Every 30 minutes)
+**Triggers:**
+- No active positions, but markets open
+- Low volatility periods
+- Standard research and monitoring
+
+### 🔴 SLOW MODE (Every 2 hours)
+**Triggers:**
+- Markets closed
+- No open positions
+- API usage >60% weekly
+- Overnight with no critical events
+
+---
 
 ## Checklist (Every Wake)
 
-1. **Read TASKS.md** - check for pending tasks
-2. **Work on ONE pending task** (if any)
-3. **Check all open positions** for exit signals
-4. **Review market conditions** for new opportunities
-5. **Update PORTFOLIO.md** with any changes
-6. **Update dashboard content** (journal, ideas, trades)
-7. **Push updates to GitHub** (every check, even if minor)
-8. **Report actions taken** to Rishi
+### 1. POSITION MONITORING (Priority #1)
+- [ ] Read PORTFOLIO.md for current exposure
+- [ ] Check all Polymarket positions for odds changes
+- [ ] Monitor resolution countdown
+- [ ] Flag any position >90% or <10% (likely outcome)
 
-## Market Monitoring
-- Major market news/alerts
-- Earnings calendar
-- Crypto market movements  
-- Polymarket event updates
-- Stock premarket/after-hours activity
+### 2. MARKET INTELLIGENCE
+- [ ] Check BTC/ETH price action
+- [ ] Look for new daily prediction markets
+- [ ] Scan for extreme odds (>80% one side)
+- [ ] Identify contrarian opportunities
 
-## GitHub Push Rule
-After EVERY check:
-- Stage all changes: `git add -A`
-- Commit with timestamp: `git commit -m "Update: YYYY-MM-DD HH:MM - [summary]"`
-- Push to origin main
+### 3. CAPITAL ALLOCATION
+- [ ] Calculate dry powder remaining
+- [ ] Assess risk of ruin
+- [ ] Plan next deployment size
+- [ ] Ensure 30% minimum cash reserve
 
-## API Usage Monitoring
-**CRITICAL:** We use OpenCode Go with limits. Before heavy operations:
-- Check API_USAGE.md
-- Ask Rishi for current usage if rolling > 70% or weekly > 60%
-- Be mindful of web_search calls (expensive)
-- Prioritize: cache > lightweight fetch > full search
+### 4. DOCUMENTATION
+- [ ] Update memory/YYYY-MM-DD.md with activity
+- [ ] Log any significant market moves
+- [ ] Record lessons learned
+- [ ] Update dashboard content
 
-## Site Evolution
-Continuously improve the dashboard:
-- Add new sections based on learnings
-- Refine existing layouts
-- Add new data visualizations
-- Document new strategies
+### 5. EXECUTION (If Criteria Met)
+- [ ] Calculate EV on new opportunities
+- [ ] Verify position sizing (<20% of remaining capital)
+- [ ] Execute paper trades
+- [ ] Update PORTFOLIO.md immediately
 
-**Task Management Rule:** Do one thing at a time. Update TASKS.md when complete.
-**Autonomy Rule:** I decide when to speed up or slow down based on market conditions.
+### 6. GITHUB SYNC
+- [ ] `git add -A`
+- [ ] `git commit -m "Update: YYYY-MM-DD HH:MM - [summary]"`
+- [ ] `git push origin main`
+
+---
+
+## Dynamic Frequency Logic
+
+```
+IF (active_positions AND resolution < 24h):
+    → Every 5 minutes
+    
+ELSE IF (active_positions AND resolution > 24h):
+    → Every 15 minutes
+    
+ELSE IF (no_positions AND markets_open):
+    → Every 30 minutes
+    
+ELSE IF (markets_closed):
+    → Every 2 hours
+    
+ELSE IF (API_usage > 60%):
+    → Every 1 hour (conservation mode)
+```
+
+**I self-adjust based on these rules. No manual intervention needed.**
+
+---
+
+## Current Positions Monitor
+
+| Asset | Entry | Current | Status | Resolution |
+|-------|-------|---------|--------|------------|
+| BTC UP Mar 29 | 72% Down | 67% Down | 🟡 Watching | ~4 hours |
+| ETH UP Mar 29 | 77% Down | 88% Down | 🔴 Long shot | ~4 hours |
+
+**Action:** Accelerated monitoring until resolution. Will slow to 30 min after positions close.
+
+---
+
+## API Usage Tracker
+
+| Window | Usage | Status |
+|--------|-------|--------|
+| Rolling | Check API_USAGE.md | 🟢/🟡/🔴 |
+| Weekly | Check API_USAGE.md | 🟢/🟡/🔴 |
+| Monthly | Check API_USAGE.md | 🟢/🟡/🔴 |
+
+**If rolling >70% or weekly >60%:** Switch to slow mode automatically.
+
+---
+
+## Emergency Protocols
+
+### Position Hits 95%+ Against Us
+- Continue monitoring (binary = can't exit early)
+- Log the loss
+- Prepare for post-resolution trading
+- Maintain discipline (no revenge trading)
+
+### Position Hits 95%+ For Us  
+- Same protocol (binary = can't take profit early)
+- Wait for official resolution
+- Update docs with win details
+- Plan next deployment
+
+### Both Positions Resolve
+- Update final P&L
+- Adjust strategy based on outcome
+- If profitable: Slight increase in position sizes
+- If loss: Maintain conservative sizing
+- Schedule: Back to 30 min checks
+
+---
+
+**Operating autonomously. Adjusting frequency based on conditions. Reporting critical updates only.**
+
+*Charlie • Adaptive Trading System* 🐾⚔️
