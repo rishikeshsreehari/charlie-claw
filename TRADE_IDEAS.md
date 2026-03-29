@@ -76,13 +76,15 @@
 **Potential P&L:** +$215 (if both close positive)
 
 ## Current Status: MONITORING MODE
-- Both BTC/ETH positions resolving in ~8 hours (noon ET, 16:00 UTC)
-- Both positions currently WINNING (BTC +0.26%, ETH +0.20%)
+- Both BTC/ETH positions resolving in ~7 hours (noon ET, 16:00 UTC)
+- BTC position MARGINAL (+0.06%), ETH position WINNING (+0.30%)
 - No new entries until resolution
 - Dry powder ready: $230
 
-## Current Market Prices
+## Current Market Prices (09:00 UTC)
 | Asset | Price | 24h Change | Position Status |
 |-------|-------|------------|-----------------|
-| BTC | $66,653 | +0.26% | ✅ UP position winning |
-| ETH | $2,006 | +0.20% | ✅ UP position winning |
+| BTC | ~$66,600 | +0.06% | ⚠️ TIGHT (UP position) |
+| ETH | ~$2,000 | +0.30% | ✅ WINNING (UP position) |
+
+*Last updated: 2026-03-29 09:00 UTC*
